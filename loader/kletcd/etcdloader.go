@@ -5,13 +5,13 @@ import (
 	"context"
 	"time"
 
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	"go.etcd.io/etcd/api/v3/mvccpb"
 	"github.com/lalamove/konfig"
 	"github.com/lalamove/konfig/parser"
 	"github.com/lalamove/konfig/watcher/kwpoll"
 	"github.com/lalamove/nui/ncontext"
 	"github.com/lalamove/nui/nstrings"
-	"go.etcd.io/etcd/clientv3"
+	clientv3 "go.etcd.io/etcd/client/v3"
 )
 
 var (
